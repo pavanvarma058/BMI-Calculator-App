@@ -23,11 +23,13 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:id="@+id/radio_button_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male" />
 
         <RadioButton
+            android:id="@+id/radio_button_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female" />
@@ -35,6 +37,7 @@
     </RadioGroup>
 
     <EditText
+        android:id="@+id/text_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -48,12 +51,14 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/edit_feet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Feet"
             android:inputType="number" />
 
         <EditText
+            android:id="@+id/edit_inches"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Inches"
@@ -61,6 +66,7 @@
     </LinearLayout>
 
     <EditText
+        android:id="@+id/text_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -68,12 +74,14 @@
         android:inputType="number" />
 
     <Button
+        android:id="@+id/calculate_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="Calculate" />
 
     <TextView
+        android:id="@+id/view_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
