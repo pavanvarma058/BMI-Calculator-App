@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#F5F6FA">
 
     <ImageView
         android:layout_width="100dp"
@@ -13,35 +14,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="BMI Calculator" />
+        android:text="BMI Calculator"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="12dp"
         android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radio_button_male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginEnd="16dp"
             android:text="Male" />
 
         <RadioButton
             android:id="@+id/radio_button_female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:text="Female" />
 
     </RadioGroup>
 
     <EditText
         android:id="@+id/text_age"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:padding="12dp"
         android:hint="Age"
+        android:background="@drawable/edittext_background"
         android:inputType="number" />
 
     <LinearLayout
@@ -52,39 +62,54 @@
 
         <EditText
             android:id="@+id/edit_feet"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="10dp"
             android:hint="Feet"
+            android:background="@drawable/edittext_background"
             android:inputType="number" />
 
         <EditText
             android:id="@+id/edit_inches"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="10dp"
             android:hint="Inches"
+            android:background="@drawable/edittext_background"
             android:inputType="number" />
     </LinearLayout>
 
     <EditText
         android:id="@+id/text_weight"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:padding="12dp"
         android:layout_margin="8dp"
+        android:background="@drawable/edittext_background"
         android:hint="Weight (kg)"
         android:inputType="number" />
 
     <Button
         android:id="@+id/calculate_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Calculate" />
+        android:background="@drawable/button_background"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/view_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"/>
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
 
 
 </LinearLayout>
